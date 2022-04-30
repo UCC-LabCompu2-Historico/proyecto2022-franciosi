@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Naturalia</title>
+    <meta content="Ignacio Franciosi" name="autor">
+    <meta content="Pagina web de una ONG ficticia sobre proteccion de animales " name="descripcion">
+    <meta content="animales, extincion, ayuda, ong " name="palabras clave">
+    <link rel="stylesheet"href="miEstilo.css" type="text/css">
+</head>
+<body>
+<form id="donaciones">
+    <p>
+        Tipo de donación
+        </p>
+    <p>
+        <input type="radio" name="tipo donacion" value="Unica vez" id="una_vez">Unica Vez
+        <input type="radio" name="tipo donacion" value="Mensual" id="una_vez">Pago Mensual
+    </p>
+    <p>
+        Cantidad a donar (U$D)
+        <input type="radio" name="cantidad" value="10" id="cant10">$10
+        <input type="radio" name="cantidad" value="50" id="cant50">$50
+        <input type="radio" name="cantidad" value="100" id="cant100">$100
+        <input type="radio" name="cantidad" value="1000" id="cant1000">$1000
+    </p>
+    <p>
+    <input type="number" name="numero de tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="16">
+    <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="4">
+    </p>
+    <p>
+    <input type="text" name="nombre y apellido" id="nombre_apellido" placeholder="Nombre y apellido del titular" size="40">
+    </p>
+    <p>
+    <input type="date" name="fecha de vencimiento" placeholder="Fecha de vencimiento">
+    </p>
+    <p>
+        <button>Enviar</button>
+    </p>
+</form>
+</body>
+</html>
