@@ -1,0 +1,58 @@
+#titulo{
+    color: black;
+    text-align: center;
+    float: top;
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+}
+
+#logo_naturalia{
+float: left;
+margin: 0.3em 1em 1em 1em;
+}
+
+.menu{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    background: #8EF35E;
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+
+}
+.menu li a{
+    text-decoration: none;
+    color:white;
+    padding: 20px;
+    display: block;
+    margin: 0 3rem
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background: green;
+
+}
+#noticias{
+    font-family: 'Caveat', cursive;
+}
+
+#titulo_noticia1{
+    font-family: 'Abel', sans-serif;
+    background-color: mediumpurple;
+
+}
+
+#cuerpo_noticia1{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: mediumpurple;
+
+}
+
+#noticia1{
+    background-color: mediumpurple;
+}
