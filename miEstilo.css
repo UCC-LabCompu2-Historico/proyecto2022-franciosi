@@ -63,95 +63,67 @@ margin: 0.3em 1em 1em 1em;
     background-color: green;
     margin: 0px;
     padding: 0px;
-    position: relative;
+    position: center;
+    text-align: center;
+
 }
-#footer_izquierdo{
-    float: left;
-    background-color: green;
-    margin: 0px;
+
+#footer_naturalia{
+
 }
 #titulo_footer{
+color: white;
     font-family: 'Sacramento', cursive;
-    font-size: 30px;
-    color: white;
-    padding-top: 15px;
+    font-size: 45px;
 
 }
 #logo_footer{
-   padding: 15px;
+    justify-content: center;
+    padding: 15px 15px 8px 15px;
 }
 
+
 #redes_sociales{
-    font-family: 'Abel', sans-serif;
-    font-size: 17px;
-    color: white;
-    padding-top: 10px;
-    padding-left: 45px;
-    margin: 0px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
 }
 
 #facebook{
-    padding-left: 45px;
-    padding-top: 15px;
-    padding-right: 15px;
+padding: 10px;
 }
 
 #instagram{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px;
 }
 
 #twitter{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px;
 }
 
-#footer_derecho{
-    float: right ;
-    background-color: green;
-    margin: 0px;
-    float: top;
-    align-self: flex-end;
-}
+
 
 #organizaciones{
-    text-align: right;
-    font-family: 'Abel', sans-serif;
-    font-size: 15px;
-    color: white;
-
-    margin: 0px;
-    background-color: green;
-    padding-left: 0px;
-    padding-bottom: 20px;
-    padding-top: 0px;
-    padding-right: 80px;
-    border: 0px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    padding-top: 8px;
 }
+
 #ize{
-    padding-left: 920px;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 20px 10px 20px 10px;
 
 }
 #iucn{
+    padding: 20px 10px 20px 10px;
 
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 15px;
 }
 
 #rspo{
-padding-left: 15px;
-    padding-right: 0px;
-    padding-bottom: 15px;
+    padding: 20px 10px 20px 10px;
 
 }
 
 #iaapa{
-padding-left: 15px;
-    padding-bottom: 15px;
+    padding: 20px 10px 20px 10px;
 
 }
 
@@ -190,13 +162,18 @@ padding-left: 15px;
 
 #noticia1{
     background-color: mediumpurple;
-    margin: 0px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 0px;
-    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 30px;
+    padding: 0px;
     border: 0px;
     float: right;
+    box-shadow: 1px 5px 10px black;
+}
+
+#noticia1:hover{
+    transform: scale(1.1);
 }
 
 #titulo_noticia2{
@@ -225,13 +202,18 @@ padding-left: 15px;
 }
 #noticia2{
     background-color: #DCA525;
-    margin: 0px;
-    padding-left: 50px;
-    padding-right: 60px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-bottom: 20px ;
+    margin-top: 20px ;
+    padding: 0px;
     border: 0px;
     float: left;
+    box-shadow: 1px 5px 10px black;
+}
+
+#noticia2:hover{
+    transform: scale(1.1);
 }
 
 #titulo_noticia3{
@@ -261,18 +243,23 @@ padding-left: 15px;
 
 #noticia3{
     background-color: #1B8FA0;
-    margin: 0px;
-    padding-left: 50px;
-    padding-right: 30px;
-    padding-top: 0px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    margin-top:0px ;
+    margin-right: 30px;
+    margin-left: 50px;
+    padding: 0px;
     border: 0px;
     float: right;
+    box-shadow: 1px 5px 10px black;
+}
+
+#noticia3:hover{
+    transform: scale(1.1);
 }
 
 #titulo_noticia4{
     font-family: 'Abel', sans-serif;
-    background-color: #EB97DE;
+    background-color: #DF85D2;
     margin-top: 20px;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -284,7 +271,7 @@ padding-left: 15px;
 #cuerpo_noticia4{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 20px;
-    background-color: #EB97DE;
+    background-color: #DF85D2;
     margin-bottom: 55px;
     padding-top: 40px;
     padding-right: 50px;
@@ -295,14 +282,19 @@ padding-left: 15px;
     line-height: 38px;
 }
 #noticia4{
-    background-color: #EB97DE;
-    margin: 0px;
-    padding-left: 50px;
-    padding-right: 60px;
-    padding-top: 40px;
-    padding-bottom: 50px;
+    background-color: #DF85D2;
+    padding: 0px;
+    margin-left: 50px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 50px;
     border: 0px;
     float: left;
+    box-shadow: 1px 5px 10px black;
+}
+
+#noticia4:hover{
+    transform: scale(1.1);
 }
 
 
