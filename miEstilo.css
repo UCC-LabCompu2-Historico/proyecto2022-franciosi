@@ -1,24 +1,33 @@
 #titulo{
-    color: black;
+    color: white;
     text-align: center;
     float: top;
-    font-family: 'Caveat', cursive;
-    font-size: 50px;
+    font-family: 'Sacramento', cursive;
+    font-size: 75px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 150px;
+    background-color: green;
 }
 
 #logo_naturalia{
 float: left;
 margin: 0.3em 1em 1em 1em;
+    padding-top: 15px ;
+    padding-bottom: 15px;
 }
 
 .menu{
     position: relative;
     list-style: none;
-    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 0px;
+    padding-left: 0px;
     background: #8EF35E;
-    width: 90%;
-    max-width: 1000px;
-    margin:auto;
+    width: 100%;
+
+    margin: 0px;
 
 }
 .menu li a{
@@ -26,33 +35,296 @@ margin: 0.3em 1em 1em 1em;
     color:white;
     padding: 20px;
     display: block;
-    margin: 0 3rem
+    margin: 0px;
+    text-align: center;
+
 }
+
 .menu li{
     display: inline-block;
-    text-align: center;
+
 }
 
 .menu li a:hover{
     background: green;
 
 }
+
+#impacto{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    text-align: left;
+    color: #DF6F0C;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#footer{
+    background-color: green;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+#footer_izquierdo{
+    float: left;
+    background-color: green;
+    margin: 0px;
+}
+#titulo_footer{
+    font-family: 'Sacramento', cursive;
+    font-size: 30px;
+    color: white;
+    padding-top: 15px;
+
+}
+#logo_footer{
+   padding: 15px;
+}
+
+#redes_sociales{
+    font-family: 'Abel', sans-serif;
+    font-size: 17px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 45px;
+    margin: 0px;
+}
+
+#facebook{
+    padding-left: 45px;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+#instagram{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#twitter{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#footer_derecho{
+    float: right ;
+    background-color: green;
+    margin: 0px;
+    float: top;
+    align-self: flex-end;
+}
+
+#organizaciones{
+    text-align: right;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+    color: white;
+
+    margin: 0px;
+    background-color: green;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    padding-right: 80px;
+    border: 0px;
+}
+#ize{
+    padding-left: 920px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+
+}
+#iucn{
+
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+}
+
+#rspo{
+padding-left: 15px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+
+}
+
+#iaapa{
+padding-left: 15px;
+    padding-bottom: 15px;
+
+}
+
 #noticias{
     font-family: 'Caveat', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 #titulo_noticia1{
     font-family: 'Abel', sans-serif;
     background-color: mediumpurple;
-
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    border: 0px;
+    font-size: 40px;
 }
 
 #cuerpo_noticia1{
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
     background-color: mediumpurple;
-
+    margin: 0px;
+    padding-top: 30px ;
+    padding-right: 50px;
+    padding-left: 25px;
+    padding-bottom: 75px;
+    border: 0px;
+    text-align-all: justify;
+    line-height: 38px;
 }
 
 #noticia1{
     background-color: mediumpurple;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    border: 0px;
+    float: right;
+}
+
+#titulo_noticia2{
+    font-family: 'Abel', sans-serif;
+    background-color: #DCA525;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border: 0px;
+    font-size: 40px;
+}
+
+#cuerpo_noticia2 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    background-color: #DCA525;
+    margin: 0px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 15px;
+    padding-bottom: 75px;
+    border: 0px;
+    text-align-all: justify;
+    line-height: 38px;
+}
+#noticia2{
+    background-color: #DCA525;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 0px;
+    float: left;
+}
+
+#titulo_noticia3{
+    font-family: 'Abel', sans-serif;
+    background-color: #1B8FA0;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border: 0px;
+    font-size: 40px;
+}
+
+#cuerpo_noticia3{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    background-color: #1B8FA0;
+    margin: 0px;
+    padding-top: 20px ;
+    padding-right: 50px;
+    padding-left: 25px;
+    padding-bottom: 75px;
+    border: 0px;
+    text-align-all: justify;
+    line-height: 42px;
+}
+
+#noticia3{
+    background-color: #1B8FA0;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    border: 0px;
+    float: right;
+}
+
+#titulo_noticia4{
+    font-family: 'Abel', sans-serif;
+    background-color: #EB97DE;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    border: 0px;
+    font-size: 40px;
+}
+
+#cuerpo_noticia4{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    background-color: #EB97DE;
+    margin-bottom: 55px;
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 15px;
+    padding-bottom: 75px;
+    border: 0px;
+    text-align-all: justify;
+    line-height: 38px;
+}
+#noticia4{
+    background-color: #EB97DE;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border: 0px;
+    float: left;
+}
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }

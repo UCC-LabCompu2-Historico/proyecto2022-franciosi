@@ -1,5 +1,15 @@
-# proyecto2022
-Estructura de Proyecto Lab de Compu II - 2022
+# Naturalia
+<p>
+- Autor: Ignacio Franciosi
+</p>
+<p>
+- Titulo del proyecto: Naturalia
+</p>
+- Contenido: Esta página simula a la de una ONG dedicada al cuidado del planeta en general. La página muestra el impacto de la ONG en nuestro planeta,
+muestra los objetivos que tiene la organizacion, tiene una sección de noticias en donde el usuario puede estar al tanto de lo que sucede en el mundo
+con respecto al medio ambiente, tiene una sección en donde el usuario puede aportar a la causa de la ONG con una donación monetaria a voluntad del usuario o
+una ayuda a la ONG que consiste en la compra de merchandising original en la cual el dinero recaudado será destinado a la causa de la ONG.
+Por último hay una sección en donde el usuario podrá contactar con la ONG.
 
 ## Requisitos del Primer Parcial
 
