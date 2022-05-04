@@ -7,7 +7,7 @@
 <p>
 - GH Pages: https://ucc-labcompu2.github.io/proyecto2022-franciosi/
 </p>
-</p>
+
 - Contenido: Esta página simula a la de una ONG dedicada al cuidado del planeta en general. La página muestra el impacto de la ONG en nuestro planeta,
 muestra los objetivos que tiene la organizacion, tiene una sección de noticias en donde el usuario puede estar al tanto de lo que sucede en el mundo
 con respecto al medio ambiente, tiene una sección en donde el usuario puede aportar a la causa de la ONG con una donación monetaria a voluntad del usuario o
