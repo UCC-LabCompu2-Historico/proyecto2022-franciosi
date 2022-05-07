@@ -20,59 +20,68 @@ margin: 0.3em 1em 1em 1em;
 .menu{
     position: relative;
     list-style: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 0px;
-    padding-left: 0px;
     background: #8EF35E;
     width: 100%;
     justify-content: center;
-    margin: 0px;
+    padding: 0px;
     align-items: center;
-
+    margin: 0px;
 }
 .menu li a{
     text-decoration: none;
     color:white;
     display: inline-block;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    margin:10px 50px 10px 60px;
 }
 
 .menu li{
+    margin:0px;
     display: inline-block;
     justify-content: center;
     align-items: center;
 }
 
-.menu li a:hover{
-    background: green;
-
+.menu li:hover {
+    background: #C2FEB7;
 }
 
 #index_menu{
-    margin: 0px 83px 0px 70px;
-
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    color: green;
+    padding: 10px 10px 10px 23px;
 
 }
-
 #noticias_menu{
-    margin: 0px 83px 0px 83px;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    color: green;
+    padding: 10px 0px 10px 0px;
 }
 
 #objetivo_menu{
-    margin: 0px 83px 0px 83px;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    color: green;
+    padding: 10px 0px 10px 0px;
 }
 
 #ayudanos_menu{
-    margin: 0px 83px 0px 83px;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    color: green;
+    padding: 10px 0px 10px 0px;
 }
 
 #contacto_menu{
-    margin: 0px 70px 0px 83px;
+    font-family: 'Koulen', cursive;
+    font-size: 25px;
+    color: green;
+    padding: 10px 0px 10px 0px;
 }
 
 #impacto{
@@ -154,10 +163,11 @@ padding: 10px;
 
 #noticias{
     font-family: 'Caveat', cursive;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    color: green;
 }
 
 #titulo_noticia1{
@@ -322,7 +332,95 @@ padding: 10px;
     transform: scale(1.1);
 }
 
+#titulo_objetivo{
+    font-family: 'Caveat', cursive;
+    font-size: 55px;
+    text-align: center;
+    color: #1B8FA0;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
 
+#cuerpo_objetivo{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    margin-top: 90px;
+    margin-left: 220px ;
+    margin-right:220px ;
+    line-height: 65px;
+    font-weight: bold;
+}
+
+#seis_objetivos{
+    background-color: #EBFFE8;
+    margin-top: 50px;
+}
+
+#imagen_nube{
+    border: 3px solid green;
+    margin: 50px 30px 30px 100px;
+    vertical-align: middle;
+}
+
+#cuerpo_nube{
+font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
+
+#imagen_gota{
+    border: 3px solid green;
+    margin: 30px 30px 30px 100px;
+    vertical-align: middle;
+}
+
+#cuerpo_gota{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
+
+#imagen_garra{
+    border: 3px solid green;
+    margin: 30px 30px 30px 100px;
+    vertical-align: middle;
+}
+#cuerpo_garra{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
+
+#imagen_mano{
+    border: 3px solid green;
+    margin: 30px 30px 30px 100px;
+    vertical-align: middle;
+}
+
+#cuerpo_mano{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
+
+#imagen_arbol{
+    border: 3px solid green;
+    margin: 30px 30px 30px 100px;
+    vertical-align: middle;
+}
+#cuerpo_arbol{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
+
+#imagen_mar{
+    border: 3px solid green;
+    margin: 30px 30px 50px 100px;
+    vertical-align: middle;
+}
+#cuerpo_mar{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
 
 
 html, body, div, span, applet, object, iframe,
