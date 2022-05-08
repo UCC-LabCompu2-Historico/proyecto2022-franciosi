@@ -485,6 +485,113 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 25px;
 }
 
+/*YOUTUBE!!!!!!!!!!!!!!!!!!!!!!*/
+#titulovideo{
+    font-family: 'Caveat', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: #1B8FA0;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#videoyt{
+    text-align: center;
+}
+
+#video{
+    padding: 50px;
+    background-color: darkred;
+    position: center;
+    margin: 40px;
+}
+
+#titulo_celebridades{
+    font-family: 'Caveat', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: #1B8FA0;
+    margin-top: 55px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.celebridadesfila1{
+    width: 1050px;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.imagentexto{
+    width: 340px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+
+}
+
+.imagencelebridad{
+
+    width: 80%;
+    height: 200px;
+    position: relative;
+    display: inline;
+    border-radius: 60%;
+    margin: 50px 30px 8px 30px;
+    border: 2px solid black;
+}
+
+.textocelebridad{
+    height: auto;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+}
+
+.celebridadesfila2{
+    width: 1024px;
+    height: auto;
+    position: relative;
+    margin: auto;
+
+}
+
+.imagentexto2{
+    width: 360px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 20px 50px 0px 50px;
+
+}
+
+.imagencelebridad2{
+    width: 80%;
+    height: 200px;
+    position: relative;
+    display: inline;
+    border-radius: 60%;
+    margin: 50px 40px 8px 40px;
+    border: 2px solid black;
+
+}
+
+.textocelebridad2{
+    height: auto;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
