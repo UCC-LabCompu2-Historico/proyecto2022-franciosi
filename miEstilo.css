@@ -92,7 +92,6 @@ margin: 0.3em 1em 1em 1em;
 #impacto{
     font-family: 'Caveat', cursive;
     font-size: 65px;
-    text-align: left;
     color: #DF6F0C;
     margin-top: 55px;
     margin-bottom: 25px;
@@ -102,7 +101,7 @@ margin: 0.3em 1em 1em 1em;
 #texto_index{
     font-family: 'M PLUS Rounded 1c', sans-serif;
 font-size: 23px ;
-    margin: 80px 60px 0px 60px;
+    margin: 80px 120px 0px 120px;
    line-height: 55px;
     text-align: center;
     color: olive;
@@ -609,6 +608,20 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
 }
 
+#texto_donaciones{
+font-family: 'Abel', sans-serif;
+    font-size: 40px;
+    line-height: 80px;
+    margin: 0px 25px 50px 55px;
+    text-align: justify;
+}
+
+#mujer_mundo{
+float: right;
+    margin: 0px 55px 0px 40px;
+box-shadow: 2px 2px 4px black ;
+}
+
 #donaciones{
     text-align: center;
     background-color: #D2B4DE;
@@ -619,14 +632,20 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 
 #boton_donar{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    background-color: #8E44AD;
     cursor: pointer;
     font-size: 20px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
-    color: white;
+    background-color: #8E44AD;
     border-radius: 6px;
     margin-bottom: 45px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#boton_donar:hover{
+    background-color: mediumpurple; /* Green */
+    color: black;
 }
 
 #titulo_merch{
@@ -720,10 +739,14 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 28px;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
-    color: white;
     border-radius: 6px;
-    margin-top: 45px;
-
+    margin-top: 70px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#boton_comprar:hover{
+    background-color: #8EF35E; /* Green */
+    color: black;
 }
 
 
