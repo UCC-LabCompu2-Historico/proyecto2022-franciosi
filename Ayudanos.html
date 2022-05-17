@@ -10,7 +10,7 @@
     <link rel="icon" type="image/jpg" href="Imagenes/Favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@600&family=Koulen&family=M+PLUS+Rounded+1c:wght@300&family=Sacramento&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body_ayudanos">
 <header>
     <a href="index.html"><img src="Imagenes/Logo.png" width="113" height="110" alt="Logo Naturalia" id="logo_naturalia"> </a>
     <h1 id="titulo">Naturalia</h1>
@@ -28,17 +28,19 @@
 
 </nav>
 
-<div>
-<h2>Doná ahora!</h2>
+
+<h2 id="titulo_dona">Doná ahora!</h2>
+    <div>
 <form id="donaciones">
+
     <p>
-        Tipo de donación
-        </p>
-    <p>
-         <input type="radio" name="tipo donacion" value="Unica vez" id="una_vez"><label for="una_vez">Unica Vez</label>
+        <br>
+        Tipo de donación:
+         <input type="radio" name="tipo donacion" value="Unica vez" id="una_vez"><label for="una_vez">Única Vez</label>
         <input type="radio" name="tipo donacion" value="Mensual" id="mensual"><label for="mensual">Pago Mensual</label>
     </p>
     <p>
+        <br>
         Cantidad a donar (U$D)
         <input type="radio" name="cantidad" value="10" id="cant10"><label for="cant10">$10</label>
         <input type="radio" name="cantidad" value="50" id="cant50"><label for="cant50">$50</label>
@@ -46,31 +48,59 @@
         <input type="radio" name="cantidad" value="1000" id="cant1000"><label for="cant1000">$1000</label>
     </p>
     <p>
-    <input type="number" name="numero de tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="16">
-    <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="4">
+        <br>
+    <input type="number" name="numero de tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="20">
+    <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="10">
     </p>
     <p>
+        <br>
     <input type="text" name="nombre y apellido" id="nombre_apellido" placeholder="Nombre y apellido del titular" size="40">
     </p>
     <p>
+        <br>
        <label for="vencimiento"> Vencimiento:</label>
     <input type="date" name="fecha de vencimiento" placeholder="Fecha de vencimiento" id="vencimiento">
     </p>
     <p>
-        <button>Enviar</button>
+        <br>
+        <button id="boton_donar">Donar</button>
+
     </p>
 </form>
+
 </div>
-<h2> Merchandising</h2>
-<div>
-    <img src="Imagenes/Remera.jpg" width="200" height="200" alt="Remera Naturalia" id="remera">
-    <p>$25</p>
-    <img src="Imagenes/Buzo.jpg" width="200" height="200" alt="Buzo Naturalia">
-    <p>$30</p>
-    <img src="Imagenes/Gorra.jpg" width="200" height="200" alt="Gorra Naturalia">
-    <p>$9.99</p>
-    <img src="Imagenes/Funda.jpg" width="200" height="200" alt="Funda para smartphone Naturalia">
-    <p>$15</p>
+<h2 id="titulo_merch"> Merchandising</h2>
+<div id="div_merch">
+    <form>
+    <ul class="merchandising">
+        <li>
+            <p>Remera Naturalia</p>
+            <input type="checkbox" id="cb1" />
+            <label for="cb1"><img src="Imagenes/Remera.jpg" class="merch_img_size" alt="Remera Naturalia" id="remera"></label>
+
+            <p>$25</p>
+        </li>
+        <li>
+            <p>Buzo Naturalia</p>
+            <input type="checkbox" id="cb2" />
+            <label for="cb2"><img src="Imagenes/Buzo.jpg" class="merch_img_size" alt="Buzo Naturalia"></label>
+            <p>$29.99</p>
+        </li>
+        <li>
+            <p>Gorra Naturalia</p>
+            <input type="checkbox" id="cb3" />
+            <label for="cb3"><img src="Imagenes/Gorra.jpg" class="merch_img_size" alt="Gorra Naturalia"></label>
+            <p>$9.99</p>
+        </li>
+        <li>
+            <p>Funda Naturalia</p>
+            <input type="checkbox" id="cb4" />
+            <label for="cb4"><img src="Imagenes/Funda.jpg" class="merch_img_size" alt="Funda para smartphone Naturalia"></label>
+            <p>$15</p>
+        </li>
+        <button id="boton_comprar">Comprar</button>
+    </ul>
+    </form>
 </div>
 <footer id="footer">
 

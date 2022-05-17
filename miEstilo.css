@@ -56,6 +56,8 @@ margin: 0.3em 1em 1em 1em;
     padding: 10px 10px 10px 23px;
 
 }
+
+
 #noticias_menu{
     font-family: 'Koulen', cursive;
     font-size: 25px;
@@ -84,6 +86,9 @@ margin: 0.3em 1em 1em 1em;
     padding: 10px 0px 10px 0px;
 }
 
+#body_index{
+    background-image: url("Imagenes/fondo_blanco.jpg");
+}
 #impacto{
     font-family: 'Caveat', cursive;
     font-size: 65px;
@@ -148,13 +153,11 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: bold;
 }
 #acuario{
-    margin: 60px 0px 60px 0px;
+    margin: 100px 0px 60px 0px;
     border: 5px solid #DF6F0C;
 }
 
-#acuario:hover{
-    transform: scale(1.1);
-}
+
 
 #footer{
     background-color: green;
@@ -226,7 +229,7 @@ padding: 10px;
 
 #noticias{
     font-family: 'Caveat', cursive;
-    font-size: 60px;
+    font-size: 70px;
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -592,6 +595,166 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     margin-bottom: 90px;
 }
 
+#body_ayudanos{
+    background-image: url("Imagenes/fondo_blanco.jpg");
+}
+#titulo_dona{
+    font-family: 'Caveat', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: #8E44AD;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#donaciones{
+    text-align: center;
+    background-color: #D2B4DE;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#boton_donar{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #8E44AD;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 45px;
+}
+
+#titulo_merch{
+    font-family: 'Caveat', cursive;
+    font-size: 75px;
+    text-align: center;
+    color: #8E44AD;
+    margin-top: 35px;
+    margin-bottom: 75px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.merchandising li {
+    display: inline-block;
+    text-align: center;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    color: green;
+    font-weight: bold;
+}
+
+.merchandising input[type="checkbox"][id^="cb"] { /*HACE INVISIBLES LOS CASILLEROS*/
+    display: none;
+}
+
+.merchandising label {
+    border: 1px solid transparent;
+    padding: 10px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.merchandising label::before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+}
+
+.merchandising label img {
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+.merchandising :checked+label {
+    border-color: transparent;
+}
+
+.merchandising :checked+label::before {
+    content: "✓";
+    background-color: #8EF35E;
+    transform: scale(1);
+}
+
+.merchandising:checked+label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 8px #333;
+
+}
+.merch_img_size {
+    width:200px !important;
+    height:200px !important;
+    align-content: center;
+    margin: 0px 35px 0px 35px;
+}
+#div_merch{
+    text-align: center;
+    margin-bottom: 180px;
+    margin-top: 40px;
+}
+#boton_comprar{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: green;
+    cursor: pointer;
+    font-size: 28px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    margin-top: 45px;
+
+}
+
+
+#titulo_contacto{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    text-align: center;
+    color: #9D0C02;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+#completar{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+}
+#form_contacto{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+
+    padding: 25px;
+    background-color: #FCEAE9;
+}
+
+#yaguarete{
+    float: right;
+    margin-top: 25px;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
