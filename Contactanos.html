@@ -10,7 +10,7 @@
     <link rel="icon" type="image/jpg" href="Imagenes/Favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@600&family=Koulen&family=M+PLUS+Rounded+1c:wght@300&family=Sacramento&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body_contacto">
 <header>
     <a href="index.html"><img src="Imagenes/Logo.png" width="113" height="110" alt="Logo Naturalia" id="logo_naturalia"> </a>
     <h1 id="titulo">Naturalia</h1>
@@ -30,31 +30,32 @@
 
 <h2 id="titulo_contacto">Contáctanos!</h2>
 <img src="Imagenes/yaguarete.png" alt="yaguarete" height="296" width="384" id="yaguarete">
+<img src="Imagenes/pez_dorado.png.crdownload" alt="pez dorado" height="226" width="420" id="pez_dorado">
 <form name="Contacto" id="form_contacto">
-    <p id="completar">
-        Complete el formulario:
+    <p>
+       <h2 id="completar">Complete el formulario:</h2>
     </p>
     <p>
         <br>
-        <input type="text" name="nombre y apellido" id="cont_nombre_apellido" placeholder="Nombre y apellido " size="40">
+        <input type="text" name="nombre y apellido" id="cont_nombre_apellido" placeholder="Nombre y apellido " size="40" class="input_contacto">
         <br>
     </p>
     <p>
         <br>
-    <input type="email" name="email" id="email" id="email" placeholder="Email" size="30">
+    <input type="email" name="email" id="email" id="email" placeholder="Email" size="30"class="input_contacto">
 
-    <input type="number" name="telefono" id="telefono" placeholder="Telefono" size="20">
+    <input type="number" name="telefono" id="telefono" placeholder="Telefono" size="20"class="input_contacto">
         <br>
     </p>
     <p>
         <br>
-        <textarea name="mensaje" id="mensaje" cols="45" rows="6" >Mensaje:</textarea>
+        <input placeholder="Mensaje" name="mensaje" id="mensaje" class="input_contacto"> </input>
         <br>
     </p>
 
 <p>
 
- <button>Enviar</button>
+ <button class="boton_contacto">Enviar</button>
 </p>
 </form>
 

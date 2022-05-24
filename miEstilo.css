@@ -121,6 +121,7 @@ vertical-align: middle;
 font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 27px;
     font-weight: bold;
+    color: #E7E7E7FF;
 }
 
 #veinticinco{
@@ -130,6 +131,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    color: #e7e7e7;
 }
 
 #noventayseis{
@@ -140,6 +142,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 30px;
     font-weight: bold;
+    color: #E7E7E7FF;
 }
 
 #impacto4{
@@ -233,6 +236,10 @@ padding: 10px;
     padding-bottom: 50px;
     padding-top: 50px;
     color: green;
+}
+
+#body_noticias{
+    background-image: url("Imagenes/fondo_blanco.jpg");
 }
 
 #titulo_noticia1{
@@ -408,6 +415,10 @@ padding: 10px;
     font-weight: bold;
 }
 
+#body_objetivo{
+    background-image: url("Imagenes/fondo_blanco.jpg");
+}
+
 #cuerpo_objetivo{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     text-align: center;
@@ -487,7 +498,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 25px;
 }
 
-/*YOUTUBE!!!!!!!!!!!!!!!!!!!!!!*/
+
 #titulovideo{
     font-family: 'Caveat', cursive;
     font-size: 75px;
@@ -618,7 +629,7 @@ font-family: 'Abel', sans-serif;
 
 #mujer_mundo{
 float: right;
-    margin: 0px 55px 0px 40px;
+    margin: 30px 55px 0px 40px;
 box-shadow: 2px 2px 4px black ;
 }
 
@@ -629,6 +640,15 @@ box-shadow: 2px 2px 4px black ;
     font-size: 20px;
     font-weight: bold;
 }
+
+
+.radio_simplemes{
+
+}
+.css_simplemes{
+
+}
+
 
 #boton_donar{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -745,14 +765,14 @@ box-shadow: 2px 2px 4px black ;
     transition-duration: 0.4s;
 }
 #boton_comprar:hover{
-    background-color: #8EF35E; /* Green */
+    background-color: #5eab3e; /* Green */
     color: black;
 }
 
 
 #titulo_contacto{
     font-family: 'Caveat', cursive;
-    font-size: 60px;
+    font-size: 75px;
     text-align: center;
     color: #9D0C02;
     margin-top: 35px;
@@ -761,22 +781,70 @@ box-shadow: 2px 2px 4px black ;
     font-weight: bold;
 }
 
+#body_contacto{
+    background-image: url("Imagenes/fondo_blanco.jpg");
+}
+
 #completar{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#9D0C02;
+    border-bottom:3px solid #9D0C02;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 20px;
+    font-weight: bold;
+}
+input.input_contacto{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #9D0C02;
+}
+input.input_contacto:focus{
+    border-bottom:2px solid #78788c;
 }
 #form_contacto{
-    text-align: center;
-    margin-top: 70px;
-    margin-bottom: 50px;
-
-    padding: 25px;
-    background-color: #FCEAE9;
+    width:340px;
+    height:440px;
+    background:#FCEAE9;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
 }
+button.boton_contacto {
+    float:right;
+    padding:8px 12px;
+    margin-top: 50px;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s;
+}
+button.boton_contacto:hover{
+    background:#9D0C02;
+    color:#fff}
 
 #yaguarete{
     float: right;
-    margin-top: 25px;
+    margin-top: 75px;
+}
+
+#pez_dorado{
+    float: left;
+    margin-top: 120px;
 }
 
 html, body, div, span, applet, object, iframe,
