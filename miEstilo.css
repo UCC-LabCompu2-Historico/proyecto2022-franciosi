@@ -88,6 +88,7 @@ margin: 0.3em 1em 1em 1em;
 
 #body_index{
     background-image: url("Imagenes/fondo_blanco.jpg");
+
 }
 #impacto{
     font-family: 'Caveat', cursive;
@@ -240,6 +241,7 @@ padding: 10px;
 
 #body_noticias{
     background-image: url("Imagenes/fondo_blanco.jpg");
+
 }
 
 #titulo_noticia1{
@@ -417,6 +419,7 @@ padding: 10px;
 
 #body_objetivo{
     background-image: url("Imagenes/fondo_blanco.jpg");
+
 }
 
 #cuerpo_objetivo{
@@ -607,6 +610,7 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 
 #body_ayudanos{
     background-image: url("Imagenes/fondo_blanco.jpg");
+
 }
 #titulo_dona{
     font-family: 'Caveat', cursive;
@@ -632,7 +636,12 @@ float: right;
     margin: 30px 55px 0px 40px;
 box-shadow: 2px 2px 4px black ;
 }
-
+#titulo_form_donacion{
+    font-family: 'Abel', sans-serif;
+    font-size: 50px;
+    color: #8E44AD;
+    margin-top: 30px;
+}
 #donaciones{
     text-align: center;
     background-color: #D2B4DE;
@@ -641,12 +650,18 @@ box-shadow: 2px 2px 4px black ;
     font-weight: bold;
 }
 
-
-.radio_simplemes{
-
+.tarjeta{
+    width: 250px;
+    height: 30px;
+    border-radius:.3em;
+    font-size: 15px;
 }
-.css_simplemes{
 
+.tarjeta_cod{
+    height: 30px;
+    border-radius:.3em;
+    width: 150px;
+    font-size: 14px;
 }
 
 
@@ -746,6 +761,7 @@ box-shadow: 2px 2px 4px black ;
     height:200px !important;
     align-content: center;
     margin: 0px 35px 0px 35px;
+    border: 3px solid green;
 }
 #div_merch{
     text-align: center;
@@ -842,7 +858,7 @@ button.boton_contacto:hover{
     margin-top: 75px;
 }
 
-#pez_dorado{
+#delfin{
     float: left;
     margin-top: 120px;
 }

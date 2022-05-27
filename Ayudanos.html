@@ -33,76 +33,78 @@
 <img src="Imagenes/mujer_mundo.jpeg" width="220" height="260" alt="mujer con mundo" id="mujer_mundo">
 <p id="texto_donaciones">Puedes proteger a las especies amenazadas y sus hábitats hoy con una donación única o mensual a Naturalia.
     Tu apoyo al trabajo de conservación global de Naturalia marcará una gran diferencia en nuestro planeta.</p>
-    <div>
-<form id="donaciones">
+<div>
 
-    <p>
-        <br>
-        Tipo de donación:
-         <input type="radio" name="tipo donacion" value="Unica vez" id="una_vez" class="radio_simplemes"><label for="una_vez"class="css_simplemes">Única Vez</label>
-        <input type="radio" name="tipo donacion" value="Mensual" id="mensual" class="radio_simplemes"><label for="mensual"class="css_simplemes">Pago Mensual</label>
-    </p>
-    <p>
-        <br>
-        Cantidad a donar (U$D)
-        <input type="radio" name="cantidad" value="10" id="cant10"><label for="cant10">$10</label>
-        <input type="radio" name="cantidad" value="50" id="cant50"><label for="cant50">$50</label>
-        <input type="radio" name="cantidad" value="100" id="cant100"><label for="cant100">$100</label>
-        <input type="radio" name="cantidad" value="1000" id="cant1000"><label for="cant1000">$1000</label>
-    </p>
-    <p>
-        <br>
-    <input type="number" name="numero de tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="20">
-    <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="10">
-    </p>
-    <p>
-        <br>
-    <input type="text" name="nombre y apellido" id="nombre_apellido" placeholder="Nombre y apellido del titular" size="40">
-    </p>
-    <p>
-        <br>
-       <label for="vencimiento"> Vencimiento:</label>
-    <input type="date" name="fecha de vencimiento" placeholder="Fecha de vencimiento" id="vencimiento">
-    </p>
-    <p>
-        <br>
-        <button id="boton_donar">DONAR</button>
+    <form id="donaciones">
+        <p id="titulo_form_donacion">Donación</p>
+        <p class="donacion exitosa"></p>
+        <p>
+            <br>
+            Tipo de donación:
+            <input type="radio" name="tipo donacion" value="Unica vez" id="una_vez" class="radio_simplemes"><label for="una_vez"class="css_simplemes">Única Vez</label>
+            <input type="radio" name="tipo donacion" value="Mensual" id="mensual" class="radio_simplemes"><label for="mensual"class="css_simplemes">Pago Mensual</label>
+        </p>
+        <p>
+            <br>
+            Cantidad a donar (U$D):
+            <input type="radio" name="cantidad" value="10" id="cant10"><label for="cant10">$10</label>
+            <input type="radio" name="cantidad" value="50" id="cant50"><label for="cant50">$50</label>
+            <input type="radio" name="cantidad" value="100" id="cant100"><label for="cant100">$100</label>
+            <input type="radio" name="cantidad" value="1000" id="cant1000"><label for="cant1000">$1000</label>
+        </p>
+        <p>
+            <br>
+            <input type="number" name="numero de tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="20" class="tarjeta">
+            <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="10" class="tarjeta_cod">
+        </p>
+        <p>
+            <br>
+            <input type="text" name="nombre y apellido" id="nombre_apellido" placeholder="Nombre y apellido del titular" size="40" class="tarjeta">
+        </p>
+        <p>
+            <br>
+            <label for="vencimiento"> Vencimiento:</label>
+            <input type="date" name="fecha de vencimiento" placeholder="Fecha de vencimiento" id="vencimiento" class="tarjeta_cod">
+        </p>
+        <p>
+            <br>
+            <button id="boton_donar">DONAR</button>
 
-    </p>
-</form>
+        </p>
+    </form>
 
 </div>
 <h2 id="titulo_merch"> Merchandising</h2>
 <div id="div_merch">
     <form>
-    <ul class="merchandising">
-        <li>
-            <p>Remera Naturalia</p>
-            <input type="checkbox" id="cb1" />
-            <label for="cb1"><img src="Imagenes/Remera.jpg" class="merch_img_size" alt="Remera Naturalia" id="remera"></label>
+        <ul class="merchandising">
+            <li>
+                <p>Remera Naturalia</p>
+                <input type="checkbox" id="cb1" />
+                <label for="cb1"><img src="Imagenes/Remera.jpg" class="merch_img_size" alt="Remera Naturalia" id="remera"></label>
 
-            <p>$25</p>
-        </li>
-        <li>
-            <p>Buzo Naturalia</p>
-            <input type="checkbox" id="cb2" />
-            <label for="cb2"><img src="Imagenes/Buzo.jpg" class="merch_img_size" alt="Buzo Naturalia"></label>
-            <p>$29.99</p>
-        </li>
-        <li>
-            <p>Gorra Naturalia</p>
-            <input type="checkbox" id="cb3" />
-            <label for="cb3"><img src="Imagenes/Gorra.jpg" class="merch_img_size" alt="Gorra Naturalia"></label>
-            <p>$9.99</p>
-        </li>
-        <li>
-            <p>Funda Naturalia</p>
-            <input type="checkbox" id="cb4" />
-            <label for="cb4"><img src="Imagenes/Funda.jpg" class="merch_img_size" alt="Funda para smartphone Naturalia"></label>
-            <p>$15</p>
-        </li>
-        <button id="boton_comprar">COMPRAR</button>
-    </ul>
+                <p>$25</p>
+            </li>
+            <li>
+                <p>Buzo Naturalia</p>
+                <input type="checkbox" id="cb2" />
+                <label for="cb2"><img src="Imagenes/Buzo.jpg" class="merch_img_size" alt="Buzo Naturalia"></label>
+                <p>$29.99</p>
+            </li>
+            <li>
+                <p>Gorra Naturalia</p>
+                <input type="checkbox" id="cb3" />
+                <label for="cb3"><img src="Imagenes/Gorra.jpg" class="merch_img_size" alt="Gorra Naturalia"></label>
+                <p>$9.99</p>
+            </li>
+            <li>
+                <p>Funda Naturalia</p>
+                <input type="checkbox" id="cb4" />
+                <label for="cb4"><img src="Imagenes/Funda.jpg" class="merch_img_size" alt="Funda para smartphone Naturalia"></label>
+                <p>$15</p>
+            </li>
+            <button id="boton_comprar">COMPRAR</button>
+        </ul>
     </form>
 </div>
 <footer id="footer">
