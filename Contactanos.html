@@ -9,6 +9,7 @@
     <link rel="stylesheet"href="miEstilo.css" type="text/css">
     <link rel="icon" type="image/jpg" href="Imagenes/Favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@600&family=Koulen&family=M+PLUS+Rounded+1c:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="misFunciones.js" type="text/javascript"></script>
 </head>
 <body id="body_contacto">
 <header>
@@ -31,32 +32,41 @@
 <h2 id="titulo_contacto">Contáctanos!</h2>
 <img src="Imagenes/yaguarete.png" alt="yaguarete" height="296" width="384" id="yaguarete">
 <img src="Imagenes/delfin.png" alt="delfin" height="276" width="320" id="delfin">
+
 <form name="Contacto" id="form_contacto">
-    <p>
+    <div class="div_form_contacto">
+
     <h2 id="completar">Complete el formulario:</h2>
-    </p>
-    <p>
-        <br>
-        <input type="text" name="nombre y apellido" id="cont_nombre_apellido" placeholder="Nombre y apellido " size="40" class="input_contacto">
-        <br>
-    </p>
-    <p>
-        <br>
-        <input type="email" name="email" id="email" id="email" placeholder="Email" size="30"class="input_contacto">
 
-        <input type="number" name="telefono" id="telefono" placeholder="Telefono" size="20"class="input_contacto">
-        <br>
-    </p>
     <p>
         <br>
-        <input placeholder="Mensaje" name="mensaje" id="mensaje" class="input_contacto"> </input>
+        <input type="text" name="nombre y apellido" id="cont_nombre_apellido" placeholder="Nombre y apellido " size="40" class="input_contacto" onsubmit="form_cont_error('cont_nombre_apellido')">
         <br>
     </p>
 
     <p>
-
-        <button class="boton_contacto">Enviar</button>
+        <br>
+        <input type="email" name="email" id="cont_email" id="email" placeholder="Email" size="30"class="input_contacto">
+        <br>
+        <input type="number" name="telefono" id="cont_telefono" placeholder="Telefono" size="20"class="input_contacto">
+        <br>
     </p>
+    <p>
+        <br>
+        <input placeholder="Mensaje" name="mensaje" id="cont_mensaje" class="input_contacto" size="50"> </input>
+        <br>
+    </p>
+
+    <p>
+
+        <button type="submit" class="boton_contacto" onclick="form_cont_error()">Enviar</button>
+
+    </p>
+        <div id="cont_error">
+            <p>Ingrese nombre y apellido</p>
+        </div>
+
+    </div>
 </form>
 
 

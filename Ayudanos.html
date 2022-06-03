@@ -9,6 +9,7 @@
     <link rel="stylesheet"href="miEstilo.css" type="text/css">
     <link rel="icon" type="image/jpg" href="Imagenes/Favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@600&family=Koulen&family=M+PLUS+Rounded+1c:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="misFunciones.js" type="text/javascript"></script>
 </head>
 <body id="body_ayudanos">
 <header>
@@ -35,7 +36,7 @@
     Tu apoyo al trabajo de conservación global de Naturalia marcará una gran diferencia en nuestro planeta.</p>
 <div>
 
-    <form id="donaciones">
+    <form id="donaciones" name="form_donaciones">
         <p id="titulo_form_donacion">Donación</p>
         <p class="donacion exitosa"></p>
         <p>
@@ -52,15 +53,31 @@
             <input type="radio" name="cantidad" value="100" id="cant100"><label for="cant100">$100</label>
             <input type="radio" name="cantidad" value="1000" id="cant1000"><label for="cant1000">$1000</label>
         </p>
+
+
+        <!--<div id="myModal-donar" class="modalContainer-donar">
+            <div class="modal-content">
+                <span class="close">×</span>
+                <h2 id="gracias-donar">¡Muchas Gracias!</h2>
+                <p>Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor</p> </div>
+        </div> -->
+        <div id="modal_donar">
+        <dialog>
+            <h2>Muchas Gracias!</h2>
+            <p> Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor </p>
+            <button id="cerrar_donar">Cerrar</button>
+        </dialog>
+        </div>
         <p>
             <br>
-            <input type="number" name="numero de tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="20" class="tarjeta">
+            <input type="number" name="numero_de_tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="20" class="tarjeta">
             <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="10" class="tarjeta_cod">
         </p>
         <p>
             <br>
             <input type="text" name="nombre y apellido" id="nombre_apellido" placeholder="Nombre y apellido del titular" size="40" class="tarjeta">
         </p>
+
         <p>
             <br>
             <label for="vencimiento"> Vencimiento:</label>
@@ -68,10 +85,11 @@
         </p>
         <p>
             <br>
-            <button id="boton_donar">DONAR</button>
-
+            <button id="boton_donar" onclick="mostrar_modal()">DONAR</button>
         </p>
+
     </form>
+
 
 </div>
 <h2 id="titulo_merch"> Merchandising</h2>
@@ -129,6 +147,8 @@
 
     </div>
 
+
 </footer>
 </body>
 </html>
+
