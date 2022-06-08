@@ -44,6 +44,7 @@
             Tipo de donación:
             <input type="radio" name="tipo donacion" value="Unica vez" id="una_vez" class="radio_simplemes"><label for="una_vez"class="css_simplemes">Única Vez</label>
             <input type="radio" name="tipo donacion" value="Mensual" id="mensual" class="radio_simplemes"><label for="mensual"class="css_simplemes">Pago Mensual</label>
+            <span class="rojo_error" id="error_simplemes_ayudanos" >Seleccione una opción</span>
         </p>
         <p>
             <br>
@@ -52,34 +53,31 @@
             <input type="radio" name="cantidad" value="50" id="cant50"><label for="cant50">$50</label>
             <input type="radio" name="cantidad" value="100" id="cant100"><label for="cant100">$100</label>
             <input type="radio" name="cantidad" value="1000" id="cant1000"><label for="cant1000">$1000</label>
+            <span class="rojo_error" id="error_cantidad_ayudanos" > Seleccione una opción</span>
         </p>
 
 
-        <div id="modal_donar">
-        <dialog>
-            <h2>Muchas Gracias!</h2>
-            <p> Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor </p>
-            <button id="cerrar_donar">Cerrar</button>
-        </dialog>
-        </div>
-        <p>
             <br>
             <input type="number" name="numero_de_tarjeta"id="numero_de_tarjeta" placeholder="Numero de la tarjeta" size="20" class="tarjeta">
+        <span class="rojo_error" id="error_tarjeta_ayudanos" >Ingrese el numero de su tarjeta</span>
             <input type="number" name="codigo de seguridad" id="codigo_de_seguridad" placeholder="Código de seguridad" size="10" class="tarjeta_cod">
+        <span class="rojo_error" id="error_codigo_ayudanos" >Escriba su codigo de seguridad</span>
         </p>
         <p>
             <br>
             <input type="text" name="nombre y apellido" id="nombre_apellido" placeholder="Nombre y apellido del titular" size="40" class="tarjeta">
+            <span class="rojo_error" id="error_nombre_ayudanos" >Escriba su nombre y apellido</span>
         </p>
 
         <p>
             <br>
             <label for="vencimiento"> Vencimiento:</label>
             <input type="date" name="fecha de vencimiento" placeholder="Fecha de vencimiento" id="vencimiento" class="tarjeta_cod">
+            <span class="rojo_error" id="error_vencimiento_ayudanos" >Seleccione una fecha</span>
         </p>
         <p>
             <br>
-            <button type="button" id="boton_donar" onclick="mostrar_modal_donar()">DONAR</button>
+            <button type="button" id="boton_donar" onclick="mostrar_modal_donar()" onclick="form_ayudanos_error()">DONAR</button>
         </p>
 
     </form>

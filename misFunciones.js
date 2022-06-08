@@ -12,7 +12,7 @@
 /*---------------------------------------------------------------- VALIDACION DE DATOS FORMULARIO CONTACTO--------------------------------------------------- */
 
     ```/**
-     * Esta funcion muestra un span con un mensaje en caso de que el input este vacío cuando se presiona el boton enviar
+     * Esta funcion muestra un span con un mensaje en caso de que el input este vacío cuando se presiona el boton enviar en CONTACTO
      * @method form_cont_error
      * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
      * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
@@ -56,6 +56,59 @@ function form_cont_error(){
     }
 
 }
+
+```/**
+     * Esta funcion muestra un span con un mensaje en caso de que el input este vacío cuando se presiona el boton enviar en AYUDANOS
+     * @method form_cont_error
+     * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
+     * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
+     * @return Valor que retorna
+     */
+   ```
+function form_ayudanos_error(){
+    let raSimple,raMes,ra10,ra50,ra100,ra1000, inNumTar, inCodigo,inNombre,daFecha;
+    let errorSimpleMes,errorCantidad,errorNumTar,errorCodigo,errorNombre,errorFecha;
+
+    raSimple = document.getElementById("una_vez").value;
+    raMes = document.getElementById("mensual").value;
+    ra10 = document.getElementById("cant10").value;
+    ra50 = document.getElementById("cant50").value;
+    ra100 = document.getElementById("cant100").value;
+    ra1000 = document.getElementById("cant1000").value;
+    inNumTar = document.getElementById("numero_de_tarjeta").value;
+    inCodigo = document.getElementById("codigo_de_seguridad").value;
+    inNombre = document.getElementById("nombre_apellido").value;
+    daFecha = document.getElementById("vencimiento").value;
+
+
+
+    errorNombre=document.getElementById("error_nombre_ayudanos");
+    errorSimpleMes = document.getElementById("error_simplemes_ayudanos");
+    errorCantidad = document.getElementById("error_cantidad_ayudanos");
+    errorNumTar = document.getElementById("error_tarjeta_ayudanos");
+    errorCodigo = document.getElementById("error_codigo_ayudanos");
+    errorFecha = document.getElementById("error_vencimiento_ayudanos");
+
+
+    if(inNumTar===""){
+        errorNumTar.style.display = "block";
+    }  else {
+        errorNumTar.style.display = "none";
+    }
+    if(inCodigo===""){
+        errorCodigo.style.display = "block";
+    }  else {
+        errorCodigo.style.display = "none";
+    }
+    if(inNombre===""){
+        errorNombre.style.display = "block";
+    }  else {
+        errorNombre.style.display = "none";
+    }
+}
+
+
+
 
 
 
