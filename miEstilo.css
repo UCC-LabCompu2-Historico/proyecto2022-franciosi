@@ -92,7 +92,7 @@ margin: 0.3em 1em 1em 1em;
 }
 #impacto{
     font-family: 'Caveat', cursive;
-    font-size: 65px;
+    font-size: 75px;
     color: #DF6F0C;
     margin-top: 55px;
     margin-bottom: 25px;
@@ -149,15 +149,17 @@ font-family: 'M PLUS Rounded 1c', sans-serif;
 #impacto4{
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 33px ;
-    margin: 80px 60px 60px 60px;
+    margin: 100px 120px 60px 120px;
     line-height: 75px;
     text-align: center;
-    color: #DF6F0C;
+    color: white;
     font-weight: bold;
+    background-color: #DF6F0C;
+    padding: 45px 60px 0px 60px;
 }
 #acuario{
     margin: 100px 0px 60px 0px;
-    border: 5px solid #DF6F0C;
+    border: 5px solid white;
 }
 
 
@@ -886,7 +888,7 @@ input.input_contacto:focus{
 button.boton_contacto {
     float:right;
     padding:8px 12px;
-    margin-top: 50px;
+    margin-top: 40px;
     font-family:'Montserrat',sans-serif;
     border:2px solid #78788c;
     background:0;
@@ -916,10 +918,22 @@ button.boton_contacto:hover{
 
 /*ERRORES*/
 
-#cont_error{
-    color: red;
+.rojo_error{
+    color: #ee0101;
+    font-size: 13px;
+    display: none;
+}
+#canvas{
+    background-color: ghostwhite;
+    border: 3px solid darkgreen;
 
 }
+#div_canvas{
+
+    text-align: center;
+    margin: 100px 0px 100px 0px;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

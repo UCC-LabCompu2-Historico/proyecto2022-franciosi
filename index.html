@@ -9,9 +9,10 @@
     <link rel="stylesheet"href="miEstilo.css" type="text/css">
     <link rel="icon" type="image/jpg" href="Imagenes/Favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Caveat:wght@600&family=Koulen&family=M+PLUS+Rounded+1c:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="misFunciones.js" type="text/javascript"></script>
 
 </head>
-<body id="body_index">
+<body id="body_index"  onload="dibujarGrafico()">
 <header>
     <a href="index.html"><img src="Imagenes/Logo.png" width="113" height="110" alt="Logo Naturalia" id="logo_naturalia"> </a>
     <h1 id="titulo">Naturalia</h1>
@@ -54,13 +55,19 @@
 </div>
 <div id="impacto4">
     <p>
-        Naturalia y sus miembros están comprometidos a inspirar e involucrar a los más de 700 millones de personas que visitan zoológicos y acuarios cada año, literalmente una décima parte de la población mundial, para tomar medidas para la conservación de las especies y la naturaleza.
+        Naturalia y sus miembros están comprometidos a inspirar e involucrar a los más de 700 millones de personas que visitan zoológicos y acuarios cada año, literalmente una décima parte de la
+        población mundial, para tomar medidas para la conservación de las especies y la naturaleza.
         <img src="Imagenes/acuario.jpg" width="700" height="400" id="acuario">
     </p>
-    <canvas>
-
-    </canvas>
 </div>
+
+
+<div id="div_canvas">
+<canvas width="800px" height="450px" id="canvas">
+    Tu navegador no soporta el tag de HTML5 de "canvas"
+</canvas>
+</div>
+
 
 <footer id="footer">
 
