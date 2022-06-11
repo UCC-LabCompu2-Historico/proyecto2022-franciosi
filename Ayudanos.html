@@ -77,7 +77,7 @@
         </p>
         <p>
             <br>
-            <button type="button" id="boton_donar" onclick="mostrar_modal_donar()" onclick="form_ayudanos_error()">DONAR</button>
+            <button type="button" id="boton_donar"  onclick="form_ayudanos_error()">DONAR</button>
         </p>
 
     </form>
@@ -86,33 +86,35 @@
 </div>
 <h2 id="titulo_merch"> Merchandising</h2>
 <div id="div_merch">
-    <form>
+    <form name="form_merch">
         <ul class="merchandising">
             <li>
                 <p>Remera Naturalia</p>
-                <input type="checkbox" id="cb1" />
+                <input type="checkbox" name="cb1" id="cb1" value="25" onclick="if(this.checked) sumar(25);else restar(25)"/>
                 <label for="cb1"><img src="Imagenes/Remera.jpg" class="merch_img_size" alt="Remera Naturalia" id="remera"></label>
-
                 <p>$25</p>
             </li>
             <li>
                 <p>Buzo Naturalia</p>
-                <input type="checkbox" id="cb2" />
+                <input type="checkbox" id="cb2" value="30" />
                 <label for="cb2"><img src="Imagenes/Buzo.jpg" class="merch_img_size" alt="Buzo Naturalia"></label>
-                <p>$29.99</p>
+                <p>$30</p>
             </li>
             <li>
                 <p>Gorra Naturalia</p>
-                <input type="checkbox" id="cb3" />
+                <input type="checkbox" id="cb3" value="10"  />
                 <label for="cb3"><img src="Imagenes/Gorra.jpg" class="merch_img_size" alt="Gorra Naturalia"></label>
-                <p>$9.99</p>
+                <p>$10</p>
             </li>
             <li>
                 <p>Funda Naturalia</p>
-                <input type="checkbox" id="cb4" />
+                <input type="checkbox" id="cb4" value="15"  />
                 <label for="cb4"><img src="Imagenes/Funda.jpg" class="merch_img_size" alt="Funda para smartphone Naturalia"></label>
                 <p>$15</p>
             </li>
+            <p>
+                <input type="text" name="total_merch" value="0" disabled>
+            </p>
             <button id="boton_comprar">COMPRAR</button>
         </ul>
     </form>

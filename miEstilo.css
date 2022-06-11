@@ -874,7 +874,7 @@ input.input_contacto:focus{
 }
 #form_contacto{
     width:340px;
-    height:440px;
+    height:500px;
     background:#FCEAE9;
     border-radius:8px;
     box-shadow:0 0 40px -10px #000;
@@ -921,7 +921,7 @@ button.boton_contacto:hover{
 .rojo_error{
     color: #ee0101;
     font-size: 13px;
-
+    display: none;
 }
 #canvas{
     background-color: ghostwhite;
