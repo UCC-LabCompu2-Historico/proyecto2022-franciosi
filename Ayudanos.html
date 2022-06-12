@@ -96,24 +96,24 @@
             </li>
             <li>
                 <p>Buzo Naturalia</p>
-                <input type="checkbox" id="cb2" value="30" />
+                <input type="checkbox" id="cb2" value="30" onclick="if(this.checked) sumar(30);else restar(30)"/>
                 <label for="cb2"><img src="Imagenes/Buzo.jpg" class="merch_img_size" alt="Buzo Naturalia"></label>
                 <p>$30</p>
             </li>
             <li>
                 <p>Gorra Naturalia</p>
-                <input type="checkbox" id="cb3" value="10"  />
+                <input type="checkbox" id="cb3" value="10" onclick="if(this.checked) sumar(10);else restar(10)" />
                 <label for="cb3"><img src="Imagenes/Gorra.jpg" class="merch_img_size" alt="Gorra Naturalia"></label>
                 <p>$10</p>
             </li>
             <li>
                 <p>Funda Naturalia</p>
-                <input type="checkbox" id="cb4" value="15"  />
+                <input type="checkbox" id="cb4" value="15"onclick="if(this.checked) sumar(15);else restar(15)"  />
                 <label for="cb4"><img src="Imagenes/Funda.jpg" class="merch_img_size" alt="Funda para smartphone Naturalia"></label>
                 <p>$15</p>
             </li>
             <p>
-                <input type="text" name="total_merch" value="0" disabled>
+                <input type="text" name="total_merch" value="0.00" disabled>
             </p>
             <button id="boton_comprar">COMPRAR</button>
         </ul>
