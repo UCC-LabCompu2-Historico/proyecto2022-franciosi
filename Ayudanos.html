@@ -113,9 +113,11 @@
                 <p>$15</p>
             </li>
             <p>
-                <input type="text" name="total_merch" value="0.00" disabled>
+                <em id="total_estilo">Total: $</em><input type="text" id="input_total" name="total_merch" size="2" value="0" disabled>
+                <span class="rojo_error_compra" id="error_comprar">Seleccione uno o mas artículos</span>
             </p>
-            <button id="boton_comprar">COMPRAR</button>
+            <button type="button" id="boton_comprar" onclick="error_compra()">COMPRAR</button>
+
         </ul>
     </form>
 </div>

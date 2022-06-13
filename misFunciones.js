@@ -174,38 +174,92 @@ function dibujarGrafico(){
     dibujarEjes();
 
     ctx.beginPath();
-    ctx.moveTo(60,60);
-    ctx.lineTo(40,60);
+    ctx.moveTo(70,300);
+    ctx.lineTo(200,250);
+    ctx.lineTo(220,260);
+    ctx.lineTo(265,225);
+    ctx.lineTo(275,240);
+    ctx.lineTo(330,210);
+    ctx.lineTo(350,180);
+    ctx.lineTo(400,170);
+    ctx.lineTo(430,150);
+    ctx.lineTo(520,120);
+    ctx.lineTo(535,135);
+    ctx.lineTo(570,110);
+    ctx.lineTo(630,100);
+    ctx.lineTo(730,60);
+
+
+
+
+    ctx.fillText("Década", (canvas.width/2)-30, canvas.height-40);
+    ctx.fillText("MtCO2/día", (canvas.width/4)-150, canvas.height-400);
+    ctx.fillText("100", (canvas.width/4)-160, canvas.height-367);
+    ctx.fillText("80", (canvas.width/4)-160, canvas.height-297);
+    ctx.fillText("60", (canvas.width/4)-160, canvas.height-227);
+    ctx.fillText("40", (canvas.width/4)-160, canvas.height-157);
+    ctx.fillText("1970", (canvas.width/4)-145, canvas.height-75);
+    ctx.fillText("1980", (canvas.width/4)-10, canvas.height-75);
+    ctx.fillText("1990", (canvas.width/2)-80, canvas.height-75);
+    ctx.fillText("2000", (canvas.width/2)+50, canvas.height-75);
+    ctx.fillText("2010", (canvas.width/2)+180, canvas.height-75);
+    ctx.fillText("2020", (canvas.width/2)+310, canvas.height-75);
+
     ctx.strokeStyle = "#5eab3e";
+    ctx.lineWidth=3;
+    ctx.stroke()
     ctx.closePath();
 
 }
 
 
 
-
-```/**
-     * Esta funcion dibuja un grafico sobre  un eje de coordenadas
-     * @method dibujarGrafico ()
+    ```/**
+     * Esta funcion toma un valor de un checkbox en caso de que esté checkeado y lo suma al valor inicial de un input
+     * @method sumar (valor)
+     * @param {int} valor - El valor almacena el valor del checkbox
      */
    ```
-
-
-var total_merch = 0;
-
 function sumar (valor){
-total_merch += valor;
+    total_merch = Number(document.form_merch.total_merch.value)+ Number(valor);
 document.form_merch.total_merch.value=total_merch;
 }
 
+
+```/**
+     * Esta funcion toma un valor de un checkbox en caso de que *NO* esté checkeado y lo resta al valor inicial de un input
+     * @method restar (valor)
+     * @param {int} valor - El valor almacena el valor del checkbox
+     */
+   ```
 function restar (valor){
-total_merch -= valor;
+        total_merch = Number(document.form_merch.total_merch.value) - Number(valor);
 document.form_merch.total_merch.value =total_merch;
 
 }
 
 
 
+```/**
+     * Esta funcion comprueba que al apretar el boton "comprar" el total sea distinto de 0, y en ese caso muestra un error.
+       En el caso contrario, es decir, si el total es distinto de 0, da un mensaje tipo alert de confirmacion de compra.
+     * @method error_compra ()
+     */
+   ```
+
+function error_compra(){
+total_merch = Number(document.form_merch.total_merch.value);
+error = document.getElementById("error_comprar")
+if (total_merch ===0){
+    error.style.display = "block";
+}else{
+    error.style.display = "none";
+}
+if (total_merch != 0){
+    alert("¡Gracias por su compra 💚! Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor 🌎")
+}
+
+}
 
 
 
