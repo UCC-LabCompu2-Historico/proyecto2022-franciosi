@@ -9,7 +9,7 @@
 
 
 
-/*---------------------------------------------------------------- VALIDACION DE DATOS FORMULARIO CONTACTO--------------------------------------------------- */
+    /*---------------------------------------------------------------- VALIDACION DE DATOS FORMULARIO CONTACTO--------------------------------------------------- */
 
     ```/**
      * Esta funcion muestra un span con un mensaje en caso de que el input este vacío cuando se presiona el boton enviar en CONTACTO. 
@@ -19,24 +19,24 @@
    ```
 
 function form_cont_error(){
-  let inNombreApellido, inEmail, inTel,inMensaje;
-  let errorNombre,errorEmail,errorTel,errorMensaje;
+    let inNombreApellido, inEmail, inTel,inMensaje;
+    let errorNombre,errorEmail,errorTel,errorMensaje;
 
-  inNombreApellido = document.getElementById("cont_nombre_apellido").value;
-  inEmail = document.getElementById("cont_email").value;
-  inTel = document.getElementById("cont_telefono").value;
-  inMensaje = document.getElementById("cont_mensaje").value;
+    inNombreApellido = document.getElementById("cont_nombre_apellido").value;
+    inEmail = document.getElementById("cont_email").value;
+    inTel = document.getElementById("cont_telefono").value;
+    inMensaje = document.getElementById("cont_mensaje").value;
 
-  errorNombre = document.getElementById("error_nombre_contacto");
-  errorTel = document.getElementById("error_telefono_contacto");
-  errorEmail = document.getElementById("error_email_contacto");
-  errorMensaje = document.getElementById("error_mensaje_contacto");
+    errorNombre = document.getElementById("error_nombre_contacto");
+    errorTel = document.getElementById("error_telefono_contacto");
+    errorEmail = document.getElementById("error_email_contacto");
+    errorMensaje = document.getElementById("error_mensaje_contacto");
 
-  if(inNombreApellido===""){
-      errorNombre.style.display = "block";
-  }  else {
-      errorNombre.style.display = "none";
-  }
+    if(inNombreApellido===""){
+        errorNombre.style.display = "block";
+    }  else {
+        errorNombre.style.display = "none";
+    }
     if(inEmail===""){
         errorEmail.style.display = "block";
     }  else {
@@ -123,7 +123,7 @@ function form_ayudanos_error(){
     if (inCodigo != "" && inNombre != "" && inNumTar != "" && daFecha != "" && ra10.checked || ra50.checked || ra100.checked || ra1000.checked && raSimple.checked || raMes.checked){
         alert ("¡Gracias por su donación 💚! Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor 🌎")
     }
-    }
+}
 
 
 ```/**
@@ -214,7 +214,7 @@ function dibujarGrafico(){
 
 
 
-    ```/**
+```/**
      * Esta funcion toma un valor de un checkbox en caso de que esté checkeado y lo suma al valor inicial de un input
      * @method sumar (valor)
      * @param {int} valor - El valor almacena el valor del checkbox
@@ -222,7 +222,7 @@ function dibujarGrafico(){
    ```
 function sumar (valor){
     total_merch = Number(document.form_merch.total_merch.value)+ Number(valor);
-document.form_merch.total_merch.value=total_merch;
+    document.form_merch.total_merch.value=total_merch;
 }
 
 
@@ -233,8 +233,8 @@ document.form_merch.total_merch.value=total_merch;
      */
    ```
 function restar (valor){
-        total_merch = Number(document.form_merch.total_merch.value) - Number(valor);
-document.form_merch.total_merch.value =total_merch;
+    total_merch = Number(document.form_merch.total_merch.value) - Number(valor);
+    document.form_merch.total_merch.value =total_merch;
 
 }
 
@@ -248,16 +248,16 @@ document.form_merch.total_merch.value =total_merch;
    ```
 
 function error_compra(){
-total_merch = Number(document.form_merch.total_merch.value);
-error = document.getElementById("error_comprar")
-if (total_merch ===0){
-    error.style.display = "block";
-}else{
-    error.style.display = "none";
-}
-if (total_merch != 0){
-    alert("¡Gracias por su compra 💚! Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor 🌎")
-}
+    total_merch = Number(document.form_merch.total_merch.value);
+    error = document.getElementById("error_comprar")
+    if (total_merch ===0){
+        error.style.display = "block";
+    }else{
+        error.style.display = "none";
+    }
+    if (total_merch != 0){
+        alert("¡Gracias por su compra 💚! Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor 🌎")
+    }
 
 }
 
