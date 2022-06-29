@@ -120,11 +120,11 @@ function form_ayudanos_error(){
         errorFecha.style.display = "none";
     }
 
-    if (inCodigo != "" && inNombre != "" && inNumTar != "" && daFecha != "" && ra10.checked || ra50.checked || ra100.checked || ra1000.checked && raSimple.checked || raMes.checked){
+    if ((inCodigo != "" && inNombre != "" && inNumTar != "" && daFecha != "") && (ra10.checked || ra50.checked || ra100.checked || ra1000.checked) && (raSimple.checked || raMes.checked)){
         alert ("¡Gracias por su donación 💚! Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor 🌎")
     }
 }
-
+//inCodigo != "" && inNombre != "" && inNumTar != "" && daFecha != "" && ra10.checked || ra50.checked || ra100.checked || ra1000.checked && raSimple.checked || raMes.checked
 
 ```/**
      * Esta funcion dibuja un eje de coordenadas de un canvas
