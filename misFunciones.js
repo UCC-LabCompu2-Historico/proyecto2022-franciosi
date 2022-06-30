@@ -159,6 +159,18 @@ function dibujarEjes() {
         ctx.stroke();
         i = i + 65;
     }
+    ctx.fillText("Década", (canvas.width/2)-30, canvas.height-40);
+    ctx.fillText("MtCO2/día", (canvas.width/4)-150, canvas.height-400);
+    ctx.fillText("100", (canvas.width/4)-160, canvas.height-367);
+    ctx.fillText("80", (canvas.width/4)-160, canvas.height-297);
+    ctx.fillText("60", (canvas.width/4)-160, canvas.height-227);
+    ctx.fillText("40", (canvas.width/4)-160, canvas.height-157);
+    ctx.fillText("1970", (canvas.width/4)-145, canvas.height-75);
+    ctx.fillText("1980", (canvas.width/4)-10, canvas.height-75);
+    ctx.fillText("1990", (canvas.width/2)-80, canvas.height-75);
+    ctx.fillText("2000", (canvas.width/2)+50, canvas.height-75);
+    ctx.fillText("2010", (canvas.width/2)+180, canvas.height-75);
+    ctx.fillText("2020", (canvas.width/2)+310, canvas.height-75);
 }
 
 ```/**
@@ -166,12 +178,40 @@ function dibujarEjes() {
      * @method dibujarGrafico ()
      */
    ```
+function dibujarGrafico() {
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
 
+    const puntos = [[70,300],[200,250],[220,260],[265,225],[275,240],[330,210],[350,180],[400,170],[430,150],[520,120],[535,135],[570,110],[630,100],[730,60]]
+    let contador =1;
+    const intervalo = setInterval(()=>{
+        dibujarIntervalo(puntos.slice(0,contador),ctx);
+        contador ++;
+        if (contador > puntos.length){
+            clearInterval(intervalo);
+        }
+    },100)
+}
+
+function dibujarIntervalo(array, ctx){
+    ctx.beginPath();
+    array.forEach((x,index) => {
+        if (index === 0) ctx.moveTo(x[0],x[1]);
+        else ctx.lineTo(x[0],x[1])
+    })
+
+    ctx.strokeStyle = "#5eab3e";
+    ctx.lineWidth=3;
+    ctx.stroke()
+    ctx.closePath();
+}
+
+
+/*
 function dibujarGrafico(){
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
 
-    dibujarEjes();
 
     ctx.beginPath();
     ctx.moveTo(70,300);
@@ -190,28 +230,13 @@ function dibujarGrafico(){
     ctx.lineTo(730,60);
 
 
-
-
-    ctx.fillText("Década", (canvas.width/2)-30, canvas.height-40);
-    ctx.fillText("MtCO2/día", (canvas.width/4)-150, canvas.height-400);
-    ctx.fillText("100", (canvas.width/4)-160, canvas.height-367);
-    ctx.fillText("80", (canvas.width/4)-160, canvas.height-297);
-    ctx.fillText("60", (canvas.width/4)-160, canvas.height-227);
-    ctx.fillText("40", (canvas.width/4)-160, canvas.height-157);
-    ctx.fillText("1970", (canvas.width/4)-145, canvas.height-75);
-    ctx.fillText("1980", (canvas.width/4)-10, canvas.height-75);
-    ctx.fillText("1990", (canvas.width/2)-80, canvas.height-75);
-    ctx.fillText("2000", (canvas.width/2)+50, canvas.height-75);
-    ctx.fillText("2010", (canvas.width/2)+180, canvas.height-75);
-    ctx.fillText("2020", (canvas.width/2)+310, canvas.height-75);
-
     ctx.strokeStyle = "#5eab3e";
     ctx.lineWidth=3;
     ctx.stroke()
     ctx.closePath();
 
 }
-
+*/
 
 
 ```/**

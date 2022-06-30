@@ -12,7 +12,7 @@
     <script src="misFunciones.js" type="text/javascript"></script>
 
 </head>
-<body id="body_index" >
+<body id="body_index" onload="dibujarEjes()">
 <header>
     <a href="index.html"><img src="Imagenes/Logo.png" width="113" height="110" alt="Logo Naturalia" id="logo_naturalia"> </a>
     <h1 id="titulo">Naturalia</h1>
@@ -66,7 +66,7 @@
 
     <h1 id="titulo_grafico">Evolución de emisiones diarias de CO2 procedente de combustibles fósiles</h1>
     <p>
-        <button type="button" id="boton_ver_grafico" onclick="dibujarGrafico()">Ver Gráfico</button>
+        <button type="button" id="boton_ver_grafico" onclick="dibujarGrafico()" >Ver Gráfico</button>
     </p>
     <canvas width="800px" height="450px" id="canvas">
 
