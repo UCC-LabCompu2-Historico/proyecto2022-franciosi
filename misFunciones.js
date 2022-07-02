@@ -1,12 +1,3 @@
-```/**
-     * Descripción de que hace la función
-     * @method Nombre de la función
-     * @param {string} ParámetroA - Explicación de que valor almacena ParámetroA
-     * @param {number} ParámetroB - Explicación de que valor almacena ParámetroB
-     * @return Valor que retorna
-     */
-   ```
-
 
 
     /*---------------------------------------------------------------- VALIDACION DE DATOS FORMULARIO CONTACTO--------------------------------------------------- */
@@ -124,7 +115,7 @@ function form_ayudanos_error(){
         alert ("¡Gracias por su donación 💚! Con su contribución ayuda a Naturalia a continuar con su trabajo por un mundo mejor 🌎")
     }
 }
-//inCodigo != "" && inNombre != "" && inNumTar != "" && daFecha != "" && ra10.checked || ra50.checked || ra100.checked || ra1000.checked && raSimple.checked || raMes.checked
+
 
 ```/**
      * Esta funcion dibuja un eje de coordenadas de un canvas
@@ -174,7 +165,7 @@ function dibujarEjes() {
 }
 
 ```/**
-     * Esta funcion dibuja un grafico sobre  un eje de coordenadas
+     * Esta funcion dibuja un grafico sobre un eje de coordenadas con una animacion en la que se dibujan todas las lineas de izquierda a derecha cada 100 milisegundos
      * @method dibujarGrafico ()
      */
    ```
@@ -185,12 +176,12 @@ function dibujarGrafico() {
     const puntos = [[70,300],[200,250],[220,260],[265,225],[275,240],[330,210],[350,180],[400,170],[430,150],[520,120],[535,135],[570,110],[630,100],[730,60]]
     let contador =1;
     const intervalo = setInterval(()=>{
-        dibujarIntervalo(puntos.slice(0,contador),ctx);
+        dibujarIntervalo(puntos.slice(0,contador),ctx); //slice recorre cada elemento del arreglo desde 0 hasta el contador
         contador ++;
         if (contador > puntos.length){
-            clearInterval(intervalo);
+            clearInterval(intervalo); //se cancela el intervalo cuando el contador llega a la longitud maxima del arreglo
         }
-    },100)
+    },100) //100 miliseg
 }
 
 function dibujarIntervalo(array, ctx){
@@ -206,37 +197,6 @@ function dibujarIntervalo(array, ctx){
     ctx.closePath();
 }
 
-
-/*
-function dibujarGrafico(){
-    var canvas = document.getElementById("canvas");
-    var ctx = canvas.getContext("2d");
-
-
-    ctx.beginPath();
-    ctx.moveTo(70,300);
-    ctx.lineTo(200,250);
-    ctx.lineTo(220,260);
-    ctx.lineTo(265,225);
-    ctx.lineTo(275,240);
-    ctx.lineTo(330,210);
-    ctx.lineTo(350,180);
-    ctx.lineTo(400,170);
-    ctx.lineTo(430,150);
-    ctx.lineTo(520,120);
-    ctx.lineTo(535,135);
-    ctx.lineTo(570,110);
-    ctx.lineTo(630,100);
-    ctx.lineTo(730,60);
-
-
-    ctx.strokeStyle = "#5eab3e";
-    ctx.lineWidth=3;
-    ctx.stroke()
-    ctx.closePath();
-
-}
-*/
 
 
 ```/**
