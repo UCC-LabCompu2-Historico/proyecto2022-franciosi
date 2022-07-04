@@ -2,12 +2,12 @@
 
     /*---------------------------------------------------------------- VALIDACION DE DATOS FORMULARIO CONTACTO--------------------------------------------------- */
 
-    ```/**
+    /**
      * Esta funcion muestra un span con un mensaje en caso de que el input este vacío cuando se presiona el boton enviar en CONTACTO. 
        Luego de la validacion, se muestra un mensaje de confirmacion de tipo "alert"
      * @method form_cont_error ()
      */
-   ```
+
 
 function form_cont_error(){
     let inNombreApellido, inEmail, inTel,inMensaje;
@@ -49,12 +49,12 @@ function form_cont_error(){
 }
 
 
-```/**
+/**
      * Esta funcion muestra un span con un mensaje en caso de que los campos o radios esten vacíos cuando se presiona el boton "enviar" en AYUDANOS
        y una vez que se comprueba lo mencionado, se muestra un alert con un mensaje de confirmacion.
      * @method form_ayudanos_error
      */
-   ```
+
 function form_ayudanos_error(){
     let raSimple,raMes,ra10,ra50,ra100,ra1000, inNumTar, inCodigo,inNombre,daFecha;
     let errorSimpleMes,errorCantidad,errorNumTar,errorCodigo,errorNombre,errorFecha;
@@ -117,11 +117,11 @@ function form_ayudanos_error(){
 }
 
 
-```/**
+/**
      * Esta funcion dibuja un eje de coordenadas de un canvas
      * @method dibujarEjes ()
      */
-   ```
+
 
 function dibujarEjes() {
     var canvas = document.getElementById("canvas");
@@ -164,11 +164,11 @@ function dibujarEjes() {
     ctx.fillText("2020", (canvas.width/2)+310, canvas.height-75);
 }
 
-```/**
+/**
      * Esta funcion dibuja un grafico sobre un eje de coordenadas con una animacion en la que se dibujan todas las lineas de izquierda a derecha cada 100 milisegundos
      * @method dibujarGrafico ()
      */
-   ```
+
 function dibujarGrafico() {
     var canvas = document.getElementById("canvas");
     var ctx = canvas.getContext("2d");
@@ -199,24 +199,24 @@ function dibujarIntervalo(array, ctx){
 
 
 
-```/**
+/**
      * Esta funcion toma un valor de un checkbox en caso de que esté checkeado y lo suma al valor inicial de un input
      * @method sumar (valor)
      * @param {int} valor - El valor almacena el valor del checkbox
      */
-   ```
+
 function sumar (valor){
     total_merch = Number(document.form_merch.total_merch.value)+ Number(valor);
     document.form_merch.total_merch.value=total_merch;
 }
 
 
-```/**
+/**
      * Esta funcion toma un valor de un checkbox en caso de que *NO* esté checkeado y lo resta al valor inicial de un input
      * @method restar (valor)
      * @param {int} valor - El valor almacena el valor del checkbox
      */
-   ```
+
 function restar (valor){
     total_merch = Number(document.form_merch.total_merch.value) - Number(valor);
     document.form_merch.total_merch.value =total_merch;
@@ -225,12 +225,12 @@ function restar (valor){
 
 
 
-```/**
+/**
      * Esta funcion comprueba que al apretar el boton "comprar" el total sea distinto de 0, y en ese caso muestra un error.
        En el caso contrario, es decir, si el total es distinto de 0, da un mensaje tipo alert de confirmacion de compra.
      * @method error_compra ()
      */
-   ```
+
 
 function error_compra(){
     total_merch = Number(document.form_merch.total_merch.value);
